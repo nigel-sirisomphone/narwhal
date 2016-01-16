@@ -112,14 +112,16 @@ A slightly different take on the single state tree. I'd like to emphasize it's a
   Subscribe to store changes. 
 
 ### @todo
+- Schmick logo
 - Write proper documentation
 - Decouple the react binder (to new repo)
 - Better demos
 - God damned unit tests
-- Improve shitty gulpfiles
-- Todo MVC
+- Improve shitty gulpfiles (mostly there)
+- Todo MVC (halfway there)
 - Experiment with non React views
 - ~~Improve mapping of store state over component properties~~
 - Improve binder re-rendering to only trigger when store state is different (need deep dif)
 - ~~Probably a better name~~ fuckin' narwhals
 - ~~Investigate using streams to store the state~~ stupid idea. maybe investigate allowing middleware to overwrite the store methods
+- performance testing
