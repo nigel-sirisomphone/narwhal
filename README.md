@@ -119,7 +119,7 @@ A slightly different take on the single state tree. I'd like to emphasize it's a
 - Improve shitty gulpfiles
 - Todo MVC
 - Experiment with non React views
-- Improve mapping of store state over component properties
+- ~~Improve mapping of store state over component properties~~
 - Improve binder re-rendering to only trigger when store state is different (need deep dif)
-- Probably a better name
-- Investigate using streams to store the state
+- ~~Probably a better name~~ fuckin' narwhals
+- ~~Investigate using streams to store the state~~ stupid idea. maybe investigate allowing middleware to overwrite the store methods
