@@ -11,7 +11,9 @@
     "react": "^0.14.6"
   },
   "files": [
-    "addons/"
+    "react/",
+    "src/",
+    "dist/"
   ],
   "devDependencies": {
     "babel-core": "^6.4.0",
