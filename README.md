@@ -94,10 +94,10 @@ A slightly different take on the single state tree. I'd like to emphasize it's a
 
   Returns a store instance
 
-  | Property     | Description                                   | Required |
-  |--------------|-----------------------------------------------|----------|
-  | initialData  | Starting point for your store                 |          |
-  | actionHandler | The reducer function to modify your app state | yes      |
+  | Property      | Description                                   | Required |
+  |---------------|-----------------------------------------------|----------|
+  | initialData   | Starting point for your store                 |          |
+  | actionHandler | The handler function to modify your app state | yes      |
 
 - `storeInstance.getState()`
 

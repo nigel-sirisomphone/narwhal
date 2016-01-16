@@ -22,12 +22,10 @@
     "babel-preset-react": "^6.3.13",
     "gulp": "^3.9.0",
     "gulp-util": "^3.0.7",
-    "webpack": "^1.12.11",
-    "webpack-dev-server": "^1.14.1"
+    "webpack": "^1.12.11"
   },
   "scripts": {
     "build": "gulp build",
-    "build-dev": "gulp build-dev",
-    "start": "gulp"
+    "build-dev": "gulp build-dev"
   }
 }
