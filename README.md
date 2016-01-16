@@ -78,14 +78,14 @@ A slightly different take on the single state tree. I'd like to emphasize it's a
   `index.js`
   ```
   import ReactDOM, { render } from 'react-dom';
-  import { Binder } from 'narwhal/react';
+  import { NarwhalBinder } from 'narwhal/react';
   import MyComponent from './component';
   ...
   // store defined earlier
   render((
-    <Binder store={store}>
+    <NarwhalBinder store={store}>
       <MyComponent />
-    </Binder>
+    </NarwhalBinder>
   ), targetDomNode);
   ```
 
