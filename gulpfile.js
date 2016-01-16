@@ -3,9 +3,8 @@ const gutil = require('gulp-util')
 
 const webpack = require('webpack')
 const webpackConfig = require('./webpack.config.js')
-const WebpackDevServer = require('webpack-dev-server')
 
-gulp.task('default', ['webpack-dev-server'])
+gulp.task('default', ['build'])
 
 // BUILD-DEV
 gulp.task('build-dev', ['webpack:build-dev'], () => {
@@ -20,8 +19,6 @@ function noop() {}
 
 function handleWebpack(name, config, callback) {
   callback = callback || noop
-
-  console.log(config.module.loaders)
 
   webpack(config, (err, stats) => {
     if (err) throw new gutil.PluginError(name, err)
@@ -60,22 +57,4 @@ gulp.task('webpack:build-dev', callback => {
   })
   
   handleWebpack('webpack:build-dev', webpackDevConfig, callback)
-})
-
-// WEBPACK-DEV-SERVER
-gulp.task('webpack-dev-server', () => {
-  const config = Object.assign({}, webpackConfig, {
-    cache: false,
-    devtool: 'eval',
-    debug: true
-  })
-
-  new WebpackDevServer(webpack(config), {
-    publicPath: `/${config.output.publicPath}`,
-    stats: {colors: true}
-  }).listen(8080, 'localhost', err => {
-    if (err) throw new gutil.PluginError('webpack-dev-server', err)
-
-    gutil.log('[webpack-dev-server]', 'http://localhost:8080/webpack-dev-server/index.html')
-  })
 })
