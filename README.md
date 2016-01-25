@@ -60,7 +60,7 @@ A slightly different take on the single state tree. I'd like to emphasize it's a
   import React, { Component } from 'react';
   import { increment, decrement } from './actions';
 
-  
+
   export default class MyComponent extends Component {
     render() {
       return (
@@ -109,19 +109,16 @@ A slightly different take on the single state tree. I'd like to emphasize it's a
 
 - `storeInstance.subscribe(callback)`
 
-  Subscribe to store changes. 
+  Subscribe to store changes.
 
 ### @todo
 - Schmick logo
+- Add compose function to join action handlers.
 - Write proper documentation
-- Decouple the react binder (to new repo)
 - Better demos
 - God damned unit tests
-- Improve shitty gulpfiles (mostly there)
-- Todo MVC (halfway there)
+- Allow composition of action handler functions
+- ~~Todo MVC (halfway there)~~ https://github.com/nigel-sirisomphone/narwhal-todo-mvc
 - Experiment with non React views
-- ~~Improve mapping of store state over component properties~~
 - Improve binder re-rendering to only trigger when store state is different (need deep dif)
-- ~~Probably a better name~~ fuckin' narwhals
-- ~~Investigate using streams to store the state~~ stupid idea. maybe investigate allowing middleware to overwrite the store methods
 - performance testing
